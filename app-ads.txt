@@ -1,0 +1,5 @@
+# app-ads.txt for Holy Bible Audio - com.holybible.audio
+# Replace PUB-XXXXXXXXXXXXXXXX with your real AdMob Publisher ID
+# Get it from: AdMob Console -> Apps -> App settings -> Publisher ID
+google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+# After push, file must be at: https://hungdh1980.github.io/holybibleaudio-website/app-ads.txt
