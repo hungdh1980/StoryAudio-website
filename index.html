@@ -3,53 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Holy Bible Audio - Free 100% - Glory to God</title>
-  <meta name="description" content="Holy Bible Audio - Free 100% - Listen to the Word of God in 6 Languages - Offline. KJV, RVV11, JFA, Spanish, French, German. No login, no tracking.">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <title>Story Audio - Free audio stories</title>
+  <meta name="description" content="Story Audio — free public-domain audio stories. Offline listening, no login, no tracking. Package com.dhh09.story.audio">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,800&family=DM+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --green: #3D6B5A;
+      --green-deep: #2C5F6E;
+      --ink: #14201C;
+      --muted: #5F6B66;
+      --page: #F3F6F2;
+      --card: #FFFFFF;
+      --line: #D5E0D8;
+      --amber: #F3E2B3;
+    }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: 'Inter', Roboto, Arial, sans-serif;
-      background: #FFFBEB;
-      color: #1F2937;
+      font-family: 'DM Sans', system-ui, sans-serif;
+      background:
+        radial-gradient(ellipse 80% 50% at 10% -10%, rgba(61,107,90,0.12), transparent 55%),
+        radial-gradient(ellipse 60% 40% at 100% 0%, rgba(243,226,179,0.45), transparent 50%),
+        var(--page);
+      color: var(--ink);
       line-height: 1.7;
       font-size: 16px;
       padding: 24px 16px 48px;
     }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-    }
+    .container { max-width: 800px; margin: 0 auto; }
     header {
       text-align: center;
       padding: 48px 20px 32px;
     }
     h1 {
-      font-size: 32px;
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 34px;
       font-weight: 800;
-      color: #7C3AED;
-      line-height: 1.25;
-      margin-bottom: 16px;
+      color: var(--green);
+      line-height: 1.2;
+      margin-bottom: 14px;
       letter-spacing: -0.02em;
     }
     .subtitle {
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 600;
-      color: #6B7280;
+      color: var(--muted);
       line-height: 1.5;
     }
     .card {
-      background: #FFFFFF;
-      border-radius: 16px;
-      box-shadow: 0 4px 24px rgba(124, 58, 237, 0.08), 0 1px 4px rgba(0,0,0,0.04);
-      padding: 28px 28px;
-      margin-bottom: 20px;
+      background: var(--card);
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      box-shadow: 0 8px 28px rgba(20, 32, 28, 0.06);
+      padding: 28px;
+      margin-bottom: 18px;
     }
     .card h2 {
-      font-size: 20px;
-      font-weight: 700;
-      color: #7C3AED;
-      margin-bottom: 14px;
+      font-size: 19px;
+      font-weight: 800;
+      color: var(--green-deep);
+      margin-bottom: 12px;
     }
     .card p {
       color: #374151;
@@ -63,14 +75,13 @@
       margin-top: 4px;
     }
     .badge {
-      background: #FEF3C7;
-      border: 1px solid #FDE68A;
-      color: #92400E;
+      background: var(--amber);
+      border: 1px solid #E8D39A;
+      color: #5A4A22;
       padding: 7px 14px;
       border-radius: 999px;
       font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.02em;
+      font-weight: 700;
     }
     .links {
       display: flex;
@@ -82,52 +93,42 @@
       align-items: center;
       gap: 8px;
       background: #FFFFFF;
-      border: 2px solid #E9D5FF;
-      color: #7C3AED;
+      border: 2px solid var(--line);
+      color: var(--green);
       padding: 10px 18px;
       border-radius: 12px;
       text-decoration: none;
-      font-weight: 600;
+      font-weight: 700;
       font-size: 14px;
       transition: all 0.2s;
     }
     .link-btn:hover {
-      background: #F5F3FF;
-      border-color: #7C3AED;
+      background: #EEF4F0;
+      border-color: var(--green);
       transform: translateY(-1px);
     }
     .link-btn.primary {
-      background: #7C3AED;
+      background: var(--green);
       color: white;
-      border-color: #7C3AED;
+      border-color: var(--green);
     }
-    .link-btn.primary:hover {
-      background: #6D28D9;
-    }
-    .contact-list {
-      list-style: none;
-    }
+    .link-btn.primary:hover { background: #325848; }
+    .contact-list { list-style: none; }
     .contact-list li {
       padding: 8px 0;
-      border-bottom: 1px dashed #FEF3C7;
+      border-bottom: 1px dashed var(--line);
       display: flex;
       gap: 10px;
       font-size: 15px;
     }
     .contact-list li:last-child { border-bottom: none; }
     .contact-list strong {
-      min-width: 88px;
-      color: #7C3AED;
-      font-weight: 600;
-    }
-    .glory {
-      text-align: center;
-      margin-top: 8px;
+      min-width: 96px;
+      color: var(--green);
       font-weight: 700;
-      color: #7C3AED;
-      font-size: 15px;
-      letter-spacing: 0.05em;
     }
+    .contact-list a { color: var(--green); font-weight: 700; text-decoration: none; }
+    .contact-list a:hover { text-decoration: underline; }
     footer {
       text-align: center;
       padding: 32px 16px 0;
@@ -135,65 +136,79 @@
       font-size: 13px;
       line-height: 1.6;
     }
-    footer a { color: #7C3AED; text-decoration: none; }
+    footer a { color: var(--green); text-decoration: none; font-weight: 600; }
     footer a:hover { text-decoration: underline; }
+    code {
+      background: #EEF4F0;
+      padding: 2px 7px;
+      border-radius: 6px;
+      font-size: 0.92em;
+    }
     @media (max-width: 480px) {
       h1 { font-size: 26px; }
-      .card { padding: 22px 20px; }
+      .card { padding: 22px 18px; }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <h1>Holy Bible Audio - Free 100% - Glory to God</h1>
-      <p class="subtitle">Listen to the Word of God - 6 Languages - Offline</p>
+      <h1>Story Audio</h1>
+      <p class="subtitle">Free public-domain audio stories — listen offline</p>
     </header>
 
     <div class="card">
-      <h2>About Holy Bible Audio</h2>
-      <p><strong>Free Bible audio app.</strong> No login, no tracking, no data collection. Listen anytime, anywhere — even offline.</p>
-      <p>Package: <code>com.holybible.audio</code>. Built with love and faith to spread the Word of God to everyone, for free, forever.</p>
-      <p>Designed for daily devotion, elderly, children, and anyone seeking peace in the Word.</p>
+      <h2>About Story Audio</h2>
+      <p><strong>Free audio story app.</strong> Classic literature and public-domain recordings you can stream or download for offline listening.</p>
+      <p>No account required. Listening history, Saved, and Downloads stay on your device.</p>
+      <p>Package: <code>com.dhh09.story.audio</code></p>
     </div>
 
     <div class="card">
-      <h2>Available Translations - 6 Languages</h2>
+      <h2>Story languages</h2>
       <div class="badges">
-        <span class="badge">KJV English</span>
-        <span class="badge">RVV11 Vietnamese</span>
-        <span class="badge">JFA Portuguese</span>
+        <span class="badge">English</span>
+        <span class="badge">Vietnamese</span>
+        <span class="badge">Portuguese</span>
         <span class="badge">Spanish</span>
         <span class="badge">French</span>
         <span class="badge">German</span>
+        <span class="badge">Italian</span>
+        <span class="badge">Korean</span>
+        <span class="badge">Japanese</span>
+        <span class="badge">Arabic</span>
+        <span class="badge">Turkish</span>
+        <span class="badge">Danish</span>
       </div>
-      <p style="margin-top:16px; font-size:14px; color:#6B7280;">More languages coming soon - Glory to God!</p>
+      <p style="margin-top:16px; font-size:14px; color:var(--muted);">
+        Audio sourced from public-domain catalogs on Internet Archive, including LibriVox volunteer recordings. Story Audio is independent and not affiliated with LibriVox or Internet Archive.
+      </p>
     </div>
 
     <div class="card">
-      <h2>Links & Resources</h2>
+      <h2>Links &amp; resources</h2>
       <div class="links">
         <a class="link-btn primary" href="privacy-policy.html">Privacy Policy</a>
         <a class="link-btn" href="app-ads.txt">app-ads.txt</a>
-        <a class="link-btn" href="#">Google Play - Coming Soon</a>
+        <a class="link-btn" href="#">App Store — Coming Soon</a>
+        <a class="link-btn" href="#">Google Play — Coming Soon</a>
       </div>
     </div>
 
     <div class="card">
-      <h2>Contact & Info</h2>
+      <h2>Contact &amp; info</h2>
       <ul class="contact-list">
-        <li><strong>Email:</strong> <a href="mailto:doanhungttk45@gmail.com" style="color:#7C3AED; font-weight:600;">doanhungttk45@gmail.com</a></li>
+        <li><strong>Email:</strong> <a href="mailto:doanhungttk45@gmail.com">doanhungttk45@gmail.com</a></li>
         <li><strong>Developer:</strong> Doan Huu Hung</li>
         <li><strong>Location:</strong> Hai Phong, Vietnam</li>
-        <li><strong>Package:</strong> com.holybible.audio</li>
-        <li><strong>Website:</strong> <a href="https://hungdh1980.github.io/holybibleaudio-website/" target="_blank" rel="noopener" style="color:#7C3AED;">hungdh1980.github.io/holybibleaudio-website</a></li>
+        <li><strong>Package:</strong> com.dhh09.story.audio</li>
+        <li><strong>Website:</strong> <a href="https://hungdh1980.github.io/StoryAudio-website/" target="_blank" rel="noopener">hungdh1980.github.io/StoryAudio-website</a></li>
       </ul>
-      <p class="glory">Glory to God! 🙏</p>
     </div>
 
     <footer>
-      <p>© 2026 Holy Bible Audio - Free 100% - Glory to God<br>
-      Package com.holybible.audio | Built with love and faith<br>
+      <p>© 2026 Story Audio — Free audio stories<br>
+      Package com.dhh09.story.audio<br>
       <a href="privacy-policy.html">Privacy Policy</a> • <a href="app-ads.txt">app-ads.txt</a> • <a href="mailto:doanhungttk45@gmail.com">Contact</a></p>
     </footer>
   </div>
